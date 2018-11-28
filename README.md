@@ -120,7 +120,7 @@ request.getRequestDispatcher("detail.jsp").forward(request, response);
 
 >*1、当要存取的属性名称中包含一些特殊字符，如 . 或 - 等并非字母或数字的符号，就一定要使用“[ ]“。例如：`${ user. stu-name}`应当改为`${user["stu-name"]} `*<br/>
 >*2、`< %=request. getParameter(“username”)% >` 等价于 `${ param. username } `*<br/>
->*3、例如，但是下面的那句EL语言可以完成如果得到一个username为空，则不显示null,而是不显示值。 *<br/>
+>*3、例如，但是下面的那句EL语言可以完成如果得到一个username为空，则不显示null,而是不显示值.*<br/>
 >*4、以下执行顺序为4 1 2 3。
   `${requestScope.userlist}` 1 
   `${sessionScope.userlist}` 2 

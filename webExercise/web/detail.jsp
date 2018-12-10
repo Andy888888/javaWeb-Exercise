@@ -11,13 +11,21 @@
     <title>学生信息</title>
 </head>
 <body>
+
+<%@ include file="header.jsp" %>
+
+<center>
 <h2>学生登记信息</h2>
-<h3>
-    1.${student} <br/>
-    2.${student.name} <br/>
-    3.${student["gender"]} <br/>
-    4.${requestScope.get("student")} <br/>
-    5.<%=request.getAttribute("student") %> <br/>
-</h3>
+    <h3>
+        1.${student} <br/>
+        2.${student.name} <br/>
+        3.${student["gender"]} <br/>
+        4.${requestScope.get("student")} <br/>
+        5.<%=request.getAttribute("student") %> <br/>
+    </h3>
+</center>
+
+<%@ include file="footer.jsp" %>
+
 </body>
 </html>

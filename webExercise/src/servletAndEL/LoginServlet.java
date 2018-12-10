@@ -35,6 +35,8 @@ public class LoginServlet extends HttpServlet {
     }
 
     private void doSomething(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+//        req.setCharacterEncoding("utf-8");
+
         String name = req.getParameter("name");
         String gender = req.getParameter("gender");
         String age = req.getParameter("age");
@@ -47,7 +49,7 @@ public class LoginServlet extends HttpServlet {
         studentDo.setNumber(number);
 
         req.setAttribute("student", studentDo);
-        req.getRequestDispatcher("detail.jsp").forward(req, resp);
-//        resp.sendRedirect("detail.jsp?key=" + ss);
+        req.getRequestDispatcher("/detail.jsp").forward(req, resp);
+//        resp.sendRedirect("/detail.jsp");
     }
 }

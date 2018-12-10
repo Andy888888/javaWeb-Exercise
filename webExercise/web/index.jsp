@@ -24,15 +24,15 @@
 
         #container {
             width: 300px;
-            height: 260px;
+            height: 200px;
             border: 1px solid gray;
             margin: 60px auto;
-            padding: 30px;
+            padding: 20px;
         }
 
         #paper {
             width: 220px;
-            margin: 30px auto;
+            margin: 20px auto;
         }
 
         #operate {
@@ -44,6 +44,7 @@
 </head>
 <body>
 <center><h2>学生信息登记</h2></center>
+<%@ include file="header.jsp"%>
 <div id="container">
     <form action="/loginServlet" method="post">
         <table id="paper">
@@ -75,5 +76,6 @@
     </form>
 
 </div>
+<jsp:include page="footer.jsp"/>
 </body>
 </html>
